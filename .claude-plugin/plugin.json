@@ -1,0 +1,31 @@
+{
+  "name": "fashion-agent",
+  "version": "1.0.0",
+  "description": "Personal AI fashion stylist — outfit recommendations, style tips, deal negotiation, and real product links from Google Shopping and Amazon.",
+  "author": "CoderMinder Inc",
+  "contact": "contact@gocodeminder.com",
+  "homepage": "https://fashion-agent-246551819686.us-central1.run.app",
+  "category": "lifestyle",
+  "tags": ["fashion", "styling", "shopping", "negotiation", "outfits"],
+  "agents": ["agents/fashion-agent.md"],
+  "skills": [
+    "skills/outfit-recommendation.md",
+    "skills/style-tips.md",
+    "skills/negotiation.md",
+    "skills/product-search.md"
+  ],
+  "endpoints": {
+    "a2a": "https://fashion-agent-246551819686.us-central1.run.app/a2a",
+    "agentCard": "https://fashion-agent-246551819686.us-central1.run.app/.well-known/agent-card.json",
+    "requestAccess": "https://fashion-agent-246551819686.us-central1.run.app/request-access"
+  },
+  "authentication": {
+    "type": "api_key",
+    "header": "X-API-Key",
+    "howToGet": "POST /request-access with your principal and name"
+  },
+  "requirements": {
+    "network": true,
+    "apis": ["fashion-agent A2A endpoint"]
+  }
+}
